@@ -78,8 +78,8 @@ section {
 }
 
 .model-select {
-    /* 모델 선택 있는 한줄 */
-    background-color: yellowgreen;
+    /* 모델선택 있는 한줄 */
+    /* background-color: yellowgreen; */
     width: 1200px;
     height: 60px;
     margin: 0 auto;
@@ -90,7 +90,7 @@ section {
 }
 
 .model-select>h3{
-    /* 모델선택있는 박스 */
+    /* 모델선택 있는 박스 */
     background-color: aquamarine;
     
     position: absolute;
@@ -106,7 +106,7 @@ section {
 .model-select>.model-select-center{
     /* car-category 박스와 모델비교 박스도 */
 
-    background-color: red;
+    /* background-color: red; */
 
     
     display: flex;
@@ -117,20 +117,81 @@ section {
 
     margin: auto;
 
-    position: relative;
-
+    position: absolute;
+    right: 0;
+    
 
 }
 
 .model-select-center>.car-category{
-    background-color: blue;
+    /* background-color: blue; */
     
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 
-    
-    justify-content: 
+    width: 80%;
+    height: 100%;
+
+    left: 0;
     
 }
+
+.model-select-center>.car-category>li>a{
+    color: rgb(75, 75, 194);
+}
+
+.model-select-center>.model-button-box{
+    /* 모델비교와 버튼이 들어있는 박스 */
+    
+    background-color: blueviolet;
+
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    
+    position: absolute;
+    right: 0;
+    
+}
+
+.model-button-box>div{
+    background-color: hotpink;
+
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    gap: 15px;
+
+
+    
+}
+
+.model-button-box>div>.check-icon{
+    /* 체크모양를 감싸고 있는 박스 */
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 4px double #ccc;
+    border-radius: 50%;
+
+    width: 22px;
+    height: 22px;
+}
+
+.check-icon>span{
+    color: #ccc;
+}
+
+.model-button-box>div>span{
+    /* 모델비교 글자 부분 */
+}
+
 
 
 
